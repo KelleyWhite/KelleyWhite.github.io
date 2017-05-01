@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-family: Helvetica;
+}
+.header {
+  /* since the images folder is located one folder up from the css folder, we begin with "../" rather than "./" to indicate tath we have to go up one folder.
+  If it were two folder up, we would start with "../../", etc.*/
+  background-image: url ('..images/the-flatiron-building.png');
+  /* sets the background to stay fixed when you scroll" */
+  background-attachment: fixed;
+  /* tells the background to fill the element completely
+  More information:
+  https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover
+  */
+  background-size: cover;
+  /*position the background*/
+  background-position: top center;
+}
+
+.header h1{
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+}
+
+.header ul li{
+  /*remoe the bullet points from the list items and displays each element as a block element- like a header or div elemetn*/
+  display: block;
+  margin: 16px 0px;
+}
+
+.header a{
+  font-size: 18px;
+  color: white;
+}
+
+.content h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.content h3{
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.content p{
+  font-size: 14px;
+}
+
+.hero{
+  background-image: url('../images/the-flatiron-building.png');
+  /* see .header for explanation */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero h2{
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer{
+  background-color: dimgray;
+  text-align: left;
+  font-size: 11px;
+  color: white;
+}
+
+.footer ul{
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul, .footer ul li{
+  /* removes the bullet points from the items and display them on the same line */
+  display: inline-block;
+}
+
+.footer a{
+  color: white;
+}
